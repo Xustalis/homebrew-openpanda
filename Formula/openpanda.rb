@@ -2,27 +2,27 @@ class Openpanda < Formula
   desc "Personal adaptive node-based distributed assistant (agent-of-agents)"
   homepage "https://github.com/Xustalis/OpenPanda"
   license "MIT"
-  version "0.0.5"
+  version "0.0.6"
 
   depends_on "python@3.12"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/Xustalis/OpenPanda/releases/download/v#{version}/panda-#{version}-darwin-arm64.tar.gz"
-      sha256 "de0a91b1b41bc5bfc31056fb8ef582e2a8edf6402c1fa80811f84efc45788f90"
+      sha256 "5e092dda2bd15c651fb55fda1fccffaa504ca8f0d492b8bafe9b1762744999d2"
     else
       url "https://github.com/Xustalis/OpenPanda/releases/download/v#{version}/panda-#{version}-darwin-amd64.tar.gz"
-      sha256 "0724268fa054ab66a8b0b793e93da8cf30c0374aebc3508d511f9b4a52e55181"
+      sha256 "ab310f5443def183ae83a95c3d4bd994e1d1d9ebdfadfe314152c06bd07d46fd"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/Xustalis/OpenPanda/releases/download/v#{version}/panda-#{version}-linux-arm64.tar.gz"
-      sha256 "5a484bcca55306a970088834f3448d5a67393c4ee0023e5305824a323fc76ff8"
+      sha256 "18e918ec7c65a09e212cf4bd4de794771e7048bf723292e7ca5e3f81f45e5779"
     else
       url "https://github.com/Xustalis/OpenPanda/releases/download/v#{version}/panda-#{version}-linux-amd64.tar.gz"
-      sha256 "d5a4062d869e6611bc04f56edd6205e9ec15e54c2e5ba43b8ba083781caf88dd"
+      sha256 "3a1b24689b0eddef1629bed579df2aca3e554a2b26d9be08c5832b38bb8fc265"
     end
   end
 
