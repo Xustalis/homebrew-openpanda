@@ -9,20 +9,20 @@ class Openpanda < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/Xustalis/OpenPanda/releases/download/v#{version}/panda-#{version}-darwin-arm64.tar.gz"
-      sha256 "c56dd4fadbe34bfa9f0958f68532344edc7d2c0b45d23955b07498f0d39a68a7"
+      sha256 "97f3250623708f5eb5b4022694f7ebcb17e53ed0c9eae40982aec86398c8f81e"
     else
       url "https://github.com/Xustalis/OpenPanda/releases/download/v#{version}/panda-#{version}-darwin-amd64.tar.gz"
-      sha256 "758491a3a359ca8f253bcf6070b40c54dc86cc3e52f4a120936eb4a4df7548c4"
+      sha256 "9d67c28da52bb22cd5b95acafe6b759ccef786cfbb752900ebd320efab30a4a0"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/Xustalis/OpenPanda/releases/download/v#{version}/panda-#{version}-linux-arm64.tar.gz"
-      sha256 "e61de58475fef2f49424fc57001b0a5ef4f4566aab4859b50f66b6d711dd0ead"
+      sha256 "438f0b011f2c7aaaf0b1bcccf2105145aea232ada6848bd6cbfaf44c1a61a936"
     else
       url "https://github.com/Xustalis/OpenPanda/releases/download/v#{version}/panda-#{version}-linux-amd64.tar.gz"
-      sha256 "6b042d154fe355fcccfa6f90d012791aa32bf6060542e400e285d7b2762897ec"
+      sha256 "cda028df9ec8e8c640173062e9872c414ab5eef5a746f391585d9f9a92a17808"
     end
   end
 
